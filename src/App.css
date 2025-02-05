@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  top: 0;
+  right: 0;
+}
+
+body{
+  margin: 0;
+}
+
+.navbar{
+  top: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo{
+  padding: 20px;
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.first_block{
+  display: block;
+  margin-top: 70px;
+  height: 850px;
+  width: 1897px;
+  background-color: rgb(45, 60, 26);
+}
