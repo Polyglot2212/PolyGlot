@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/HomePage.css'
-import { Link } from 'react-router-dom'
 import firstimage from "../assets/reading.png"
 import okno from "../assets/okno.png"
 import meditateQyz from "../assets/meditating.png"
+import sittingReading from "../assets/sitting-reading.png"
 import Navbar from '../components/Navbar'
 
 
@@ -12,7 +12,7 @@ export default function HomePage() {
     <div>
       <Navbar/>
       <div className="first_block">
-        <img src={firstimage} alt="firstimage" className="first_image" />
+        <img src={sittingReading} alt="firstimage" className="first_image" />
         <b className="name">PolyGlot - learn a lot!</b>
         <b className="description">It is a platform for learning three languages Kazakh, English and Russian. 
           There will be a quiz and a personal account with progress. </b>
@@ -35,6 +35,9 @@ export default function HomePage() {
           <img src={okno} alt="okno2" className="containerdva" />
           <img src={meditateQyz} alt="chel" className="cheldaun" />
         </div>
+      </div>
+      <div className="third_container">
+        
       </div>
     </div>
   )

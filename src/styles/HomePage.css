@@ -5,6 +5,7 @@
 }
 
 .first_block{
+    user-select: none;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,7 @@
     flex-direction: column;
     margin-top: 80px;
     height: 840px;
-    width: 1897px;
+    width: 100%;
   }
 
 .name{
@@ -33,6 +34,7 @@
 }
 
 .second_block{
+    user-select: none;
     background-color: #e8f4f4;
     justify-content: center;
     align-items: center;
@@ -40,7 +42,7 @@
     flex-direction: row;
     margin-top: 80px;
     height: 840px;
-    width: 1897px;
+    width: 100%;
 }
 
 
@@ -93,12 +95,13 @@
 
 
 .container{
-    position: absolute;
+    z-index: 50;
     max-width: 400px;
 }
 
 .containerdva{
-    max-width: 300px;
+    position: absolute;
+    max-width:330px;
     padding-left: 200px;
     padding-bottom: 200px;
 }
@@ -109,6 +112,7 @@
     padding-top: 230px;
     padding-left: 100px;
     animation: levitation 3s ease-in-out infinite;
+    z-index: 51;
 }
 
 @keyframes levitation {
