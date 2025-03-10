@@ -5,6 +5,7 @@ import '../styles/Navbar.css';
 
 function Navbar() {
     const [isVisible, setVisible] = useState(false);
+    const [isLogin, setLogin] = useState(true);
 
     return (
         <div>
@@ -15,23 +16,23 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className='links'>
-                    <Link to="/Account" className="link">
+                    <Link to="/Account" className={isLogin ? "link visible" : "link hidden"}>
                         Account
                     </Link>
                 </div>
                 <div className='links'>
-                    <Link to="/QuizPage" className="link">
+                    <Link to="/QuizPage" className={isLogin ? "link visible" : "link hidden"}>
                         QuizPage
                     </Link>
                 </div>
                 <div className='links'>
-                    <Link to="/Roadmap" className="link">
+                    <Link to="/Roadmap" className={isLogin ? "link visible" : "link hidden"}>
                         Roadmap
                     </Link>
                 </div>
                 <div className='links'>
                     <button className="Login" onClick={() => setVisible(!isVisible)}>
-                        SignIn
+                        Sign In
                     </button>
                 </div>
             </nav>

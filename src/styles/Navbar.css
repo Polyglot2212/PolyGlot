@@ -4,6 +4,7 @@
   font-size: 35px;
   color: black;
   text-decoration: none;
+  user-select: none;
 }
 
 .navbar{
@@ -11,6 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2000;
+  user-select: none;
 }
 
 .link{
@@ -36,7 +39,8 @@
   border: none;
   color: white;
   font-size: 20px;
-  font-family: system-ui;
+  font-family: "Lora", serif;
+  font-weight: bold;
   background-color: #ff5678;
   cursor: pointer;
   transition: 0.5s;
@@ -49,4 +53,22 @@
 
 .logoLink{
   padding-right: 100px;
+}
+
+.swinging{
+  max-width: 700px;
+  padding-left: 200px;
+  animation: swinging 3s ease-in-out infinite;
+}
+
+@keyframes swinging{
+  0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
 }
